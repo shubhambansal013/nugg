@@ -1,0 +1,21 @@
+The project structure that I will follow for creating a modular component structure is as follow: 
+
+/src
+	/components
+		/FirstComponent
+			/index.js
+			/firstComponent.scss
+		/SecondComponent
+			/index.js
+			/secondComponent.scss
+	/presentational
+		/HigherOrderComponentUsingComponents
+			/index.js
+			/higherOrderComponentUsingComponents.scss
+	/index.js
+
+
+	The component folder will have components that are using only the state but do not require to interact with the redux.
+	The presentational folder has components which use the components from the component folder to create higher order components and are used to connect to redux also.
+
+	Hence the component logic stays seperated from the applications business logic.
